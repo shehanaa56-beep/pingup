@@ -15,7 +15,6 @@
     "cap:ios": "npx cap open ios"
   },
   "dependencies": {
-    "@capacitor/push-notifications": "^7.0.3",
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-accordion": "^1.2.11",
     "@radix-ui/react-alert-dialog": "^1.1.14",
@@ -68,13 +67,11 @@
     "vaul": "^0.9.9",
     "zod": "^3.25.76"
   },
-  "optionalDependencies": {
+  "devDependencies": {
     "@capacitor/android": "^7.4.4",
     "@capacitor/cli": "^7.4.4",
     "@capacitor/core": "^7.4.4",
-    "@capacitor/ios": "^7.4.4"
-  },
-  "devDependencies": {
+    "@capacitor/ios": "^7.4.4",
     "@eslint/js": "^9.32.0",
     "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^22.16.5",
