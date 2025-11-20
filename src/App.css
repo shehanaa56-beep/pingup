@@ -1,0 +1,70 @@
+/* Mobile-first responsive design */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  #root {
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* Ensure full height on mobile */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Touch-friendly interactions */
+  button, input, textarea, select {
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+
+  /* Better scrolling on mobile */
+  * {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #root {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+  #root {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+}
+
+/* Chat-specific mobile optimizations */
+.chat-container {
+  height: calc(100vh - 60px); /* Account for mobile browser UI */
+}
+
+@media (max-width: 768px) {
+  .chat-container {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+
